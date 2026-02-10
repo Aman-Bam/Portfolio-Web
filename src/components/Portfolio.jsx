@@ -1,9 +1,11 @@
+import { getImg, getVideo } from '../utils/imageKit';
+
 function Portfolio() {
     const projects = [
         {
             title: 'Dental Clinic Management System',
             description: 'Full-stack dental clinic web app with authentication, appointment booking, admin dashboard, and Supabase database.',
-            image: '/Project_img/dental.webp',
+            image: getImg('Project_img/dental.webp'),
             link: 'https://dental-theta-ruby.vercel.app/',
             tags: ['Healthcare', 'Full-Stack', 'Supabase'],
             tagColors: ['bg-primary-500/30 text-primary-300', 'bg-purple-500/30 text-purple-300', 'bg-emerald-500/30 text-emerald-300']
@@ -11,7 +13,7 @@ function Portfolio() {
         {
             title: 'Apuni Sarkar – Citizen Services Portal',
             description: 'Full-stack government-style citizen services platform with authentication, service requests, admin panel, and database integration.',
-            image: '/Project_img/apuni-sarkar.webp',
+            image: getImg('Project_img/apuni-sarkar.webp'),
             link: 'https://apuni-sarkar-citizen-services-done.vercel.app/',
             tags: ['Government', 'Full-Stack', 'Dashboard'],
             tagColors: ['bg-blue-500/30 text-blue-300', 'bg-purple-500/30 text-purple-300', 'bg-emerald-500/30 text-emerald-300']
@@ -19,7 +21,7 @@ function Portfolio() {
         {
             title: 'Real Estate Marketplace',
             description: 'Property listing platform with search, filters, property details pages, and responsive UI for buyers and sellers.',
-            image: '/Project_img/real-estate.png',
+            image: getImg('Project_img/real-estate.png'),
             link: 'https://aman-bam.github.io/real-estate-marketplace/',
             tags: ['Marketplace', 'Listings', 'Responsive'],
             tagColors: ['bg-orange-500/30 text-orange-300', 'bg-blue-500/30 text-blue-300', 'bg-emerald-500/30 text-emerald-300']
@@ -27,7 +29,7 @@ function Portfolio() {
         {
             title: 'SuperJarvis – AI Voice Assistant',
             description: 'Intelligent AI assistant with voice interaction, task automation, and smart responses.',
-            video: '/Project_img/superjarvis.mp4',
+            video: getVideo('Project_img/superjarvis.mp4'),
             link: 'https://github.com/Aman-Bam/SuperJARVIS',
             tags: ['AI', 'Voice', 'Automation'],
             tagColors: ['bg-emerald-500/30 text-emerald-300', 'bg-purple-500/30 text-purple-300', 'bg-blue-500/30 text-blue-300']
@@ -65,6 +67,7 @@ function Portfolio() {
                                 <div className="aspect-video overflow-hidden bg-black">
                                     {project.video ? (
                                         <video
+                                            key={project.video}
                                             className="w-full h-full object-cover"
                                             autoPlay
                                             muted

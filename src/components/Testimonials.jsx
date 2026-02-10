@@ -1,6 +1,7 @@
 import { Star, Quote, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { getImg } from '../utils/imageKit';
 
 function Testimonials() {
     const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -11,7 +12,7 @@ function Testimonials() {
             text: "Aman built our restaurant website in just one week! The design is beautiful and we've seen a 40% increase in online reservations. Highly recommended!",
             author: 'Marco Rodriguez',
             role: 'Owner, Bella Italia Restaurant',
-            image: '/testimonials/marco.webp',
+            image: getImg('testimonials/marco.webp'),
             chapter: 'Chapter 1',
             title: 'The Restaurant Revival',
             journey: 'From empty tables to fully booked weekends',
@@ -23,7 +24,7 @@ function Testimonials() {
             text: "The AI voice agent Aman set up for my clinic handles after-hours calls perfectly. Patients love being able to book appointments anytime. Game changer!",
             author: 'Dr. Sarah Mitchell',
             role: 'Director, Smith Medical Clinic',
-            image: '/testimonials/sarah.webp',
+            image: getImg('testimonials/sarah.webp'),
             chapter: 'Chapter 2',
             title: 'The 24/7 Solution',
             journey: 'From missed calls to round-the-clock care',
@@ -35,7 +36,7 @@ function Testimonials() {
             text: "My landing page converts like crazy! Aman understood exactly what I needed and delivered beyond expectations. Professional, fast, and affordable.",
             author: 'Jennifer Adams',
             role: 'Life Coach & Consultant',
-            image: '/testimonials/jennifer.webp',
+            image: getImg('testimonials/jennifer.webp'),
             chapter: 'Chapter 3',
             title: 'The Conversion Catalyst',
             journey: 'From visitors to loyal clients',

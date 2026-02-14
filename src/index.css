@@ -14,34 +14,12 @@ html {
 /* ====================================
    PREMIUM SMOOTH SCROLLING
    ==================================== */
+/* ====================================
+   PREMIUM SMOOTH SCROLLING REMOVED
+   ==================================== */
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  overscroll-behavior: none;
-}
-
-body {
-  position: relative;
-}
-
-html.lenis {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
 }
 
 /* ====================================

@@ -2,7 +2,7 @@
 
 A modern, high-performance personal portfolio website built with **React**, **Vite**, and **Tailwind CSS**. This project showcases professional experience, skills, and projects with a focus on interactive design, smooth animations, and a seamless user experience.
 
-Live Preview[https://portfolio-in-real-code-58x76s7q6-amans-projects-f3564815.vercel.app/]
+[Live Preview](https://portfolio-in-real-code-58x76s7q6-amans-projects-f3564815.vercel.app/)
 
 ## 🚀 Features
 
